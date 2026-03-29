@@ -10,7 +10,6 @@ genai.configure(api_key=API_KEY)
 # 2. AI 모델 선택
 model = genai.GenerativeModel('gemini-2.5-flash')
 
-
 def generate_blog_post(user_topic):
     # 3. 블로그 맞춤형 프롬프트
     prompt = f"""
