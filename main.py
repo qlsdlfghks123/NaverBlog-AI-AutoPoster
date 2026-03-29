@@ -4,10 +4,10 @@ import random
 import pyperclip
 from dotenv import load_dotenv
 
-# Gemini 관련
+# Gemini
 import google.generativeai as genai
 
-# Selenium 관련
+# Selenium 
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
@@ -22,7 +22,6 @@ genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 user_id = os.getenv("NAVER_ID")
 
 # 2. Gemini 글 생성 함수
-
 
 def generate_contents(topic):
     print(f"🤖 Gemini가 '{topic}' 주제로 글을 작성 중입니다...")
@@ -49,7 +48,6 @@ def generate_contents(topic):
     return title, content
 
 # 3. 네이버 블로그 업로드 함수
-
 
 def upload_to_naver(title, content):
     # 브라우저 실행 설정
