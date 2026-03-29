@@ -13,7 +13,7 @@ model = genai.GenerativeModel('gemini-2.5-flash')
 def generate_blog_post(user_topic):
     # 3. 블로그 맞춤형 프롬프트
     prompt = f"""
-    너는 '개미의 마이크로 투자'라는 블로그를 운영하는 10년차 전문 투자자야.
+    너는 ''라는 블로그를 운영하는 블로거야.
     주제: {user_topic}
     
     위 주제로 네이버 블로그 포스팅을 작성해줘.
