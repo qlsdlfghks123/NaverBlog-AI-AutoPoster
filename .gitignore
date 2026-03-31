@@ -1,0 +1,4 @@
+.env
+naver_cookies.enc
+__pycache__/
+.venv/
